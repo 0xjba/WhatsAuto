@@ -20,6 +20,32 @@ pip install pywhatkit
 ```
 Awesome! Now that we’ve installed pywhatkit, we’re ready to import the library to setup the environment.
 
+## Setting up the Project
+
+Create a Directory for the project; Example: WhatsAuto
+Inside the Project directory create the python program for automation.
+```
+import pywhatkit as kit
+```
 Great! Now that we’ve imported pywhatkit, we’re ready to start setting up the whatsapp web for automation.
 
-## 
+Now Mention the path to Chromedriver.exe or Chrome browser.
+```
+kit.add_driver_path('chromedriver.exe')
+```
+Easiest way is to use the Chromedriver.exe & place it in the project directory itself.
+
+Now, lets setup the Whatsapp using Whatsapp Web. 
+```
+kit.load_QRcode()
+```
+This loads the Whatsapp web page to scan the QR code & access your Whatsapp from desktop.
+
+Hooray! We are done with the setup for automation, so lets send some messages.
+
+```
+pywhatkit.sendwhatmsg("+919*********","Hello, Buddy",15,00)
+```
+Just put the recievers phone number followed by the message & finally the time to send the message.
+
+NOTE:

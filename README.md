@@ -6,14 +6,12 @@ author: '@the-injineer'
 How easy it would have been if sending important daily messages automatically & in a scheduled manner was possible. Lets make that MAGIC happen.
 WhatsAuto is a program that uses pywhatkit which is a Python library for automating WhatsApp to send messages like daily quotes, news, market news, etc. 
 
-![](img/final-demo.png)
+![](img/banner.png)
 
-In this workshop, you’re going to create a Python program to automate sending Whatsapp messages, in less than 15 lines of code.
+In this workshop, you’re going to create a Python program to automate sending Whatsapp messages, in less than 10 lines of code.
 
 ## 😇 Prerequisites
-You should have a beginner understanding of:
-Python
-JSON
+You should have a beginner understanding of Python & JSON.
 
 If you dont have a idea about this, then dont worry this workshop will give you the bare essentials to get started.
 
@@ -23,7 +21,7 @@ We’re going to be using [pywhatkit](https://pypi.org/project/pywhatkit/), a Py
 
 Install the Pywhatkit library using the `pip` function in python.
 What is pip?-[pip](https://docs.python.org/3/installing/index.html) is a de facto standard package-management system used to install and manage software packages written in Python.
-```
+```py
 pip install pywhatkit
 ```
 
@@ -33,13 +31,13 @@ Awesome! Now that we’ve installed pywhatkit, we’re ready to [import](https:/
 ) the library to setup the environment, but before that lets create a Directory for the project; Example: WhatsAuto.
 
 Inside the Project directory create the file for python program, then `import` the module.
-```
+```py
 import pywhatkit
 ```
 Great! Now that we’ve imported pywhatkit, we are all good with the automation part.
 
 Just put the recievers phone number followed by the message & finally the time to send the message.
-```
+```py
 pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)
 ```
 NOTE:Pywhatkit doesnt accept Time with preciding zeroes.
@@ -48,22 +46,35 @@ NOTE:Pywhatkit doesnt accept Time with preciding zeroes.
 Large amount of data of many services like Weather, Traffic & a lot more can be accessed with their API's. We will be using here API's( application programming interface) which throws out data in [JSON](https://www.json.org/json-en.html) form. But before that what exactly is a API, it is a set of functions that allows applications to access data and interact with external software components, operating systems, or microservices.
 
 To obtain data from an API we need to import the JSON & [requests](https://requests.readthedocs.io/en/master/api/) module.
-```
+```py
 import json
 import requests
 ```
 Using the `GET` function we will request for the data from the API & will store it in a variable.
-```
+```py
 quotedata = requests.get("http://quotes.stormconsultancy.co.uk/random.json")
 ```
 JSON data obtained from the API has multiple data stored in a key-value pair.
 Example:
-```
+```json
 {"author":"Mark Gibbs","id":36,"quote":"No matter how slick the demo is in rehearsal, when you do it in front of a live audience, the probability of a flawless presentation is inversely proportional to the number of people watching, raised to the power of the amount of money involved.","permalink":"http://quotes.stormconsultancy.co.uk/quotes/36"}
 ```
 We need to extract the specific data from the JSON data obtained & store it in a variable.
-```
+```py
 quote = quotedata.json()['quote']
 ```
 Pretty straight forward, right? 😄
 ## 🛠️ Putting it all together
+
+```py
+import requests
+import json
+import pywhatkit as kit
+quotedata = requests.get("http://quotes.stormconsultancy.co.uk/random.json")
+quote = quotedata.json()['quote']
+phone = input("Enter a Mobile Number with country code in your Contacts to send a quote:")
+print("Enter the Time to send message, at least 5 mins from the current time")
+hour = int(input("Enter hour in 24hrs Format without preciding zeroes:"))
+minutes = int(input("Enter minutes without preciding zeroes:"))
+kit.sendwhatmsg(phone, quote ,hour, minutes)
+```

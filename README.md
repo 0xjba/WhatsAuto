@@ -22,6 +22,7 @@ We’re going to be using [pywhatkit](https://pypi.org/project/pywhatkit/), a Py
 
 Install the Pywhatkit library using the `pip` function in python.
 What is pip?-[pip](https://docs.python.org/3/installing/index.html) is a de facto standard package-management system used to install and manage software packages written in Python.
+
 ```py
 pip install pywhatkit
 ```
@@ -32,39 +33,56 @@ Awesome! Now that we’ve installed pywhatkit, we’re ready to [import](https:/
 ) the library to setup the environment, but before that lets create a Directory for the project; Example: WhatsAuto.
 
 Inside the Project directory create the file for python program, then `import` the module.
+
 ```py
 import pywhatkit
 ```
+
 Great! Now that we’ve imported pywhatkit, we are all good with the automation part.
 
 Just put the recievers phone number followed by the message & finally the time to send the message.
+
 ```py
 pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)
+
 ```
-NOTE:Pywhatkit doesnt accept Time with preciding zeroes.
+NOTE: pywhatkit doesnt accept Time with preciding zeroes.
 
 ## 🌐 Fetching Data
 
 Large amount of data of many services like Weather, Traffic & a lot more can be accessed with their API's. We will be using here API's( application programming interface) which throws out data in [JSON](https://www.json.org/json-en.html) form. But before that what exactly is a API, it is a set of functions that allows applications to access data and interact with external software components, operating systems, or microservices.
 
 To obtain data from an API we need to import the JSON & [requests](https://requests.readthedocs.io/en/master/api/) module.
+
 ```py
 import json
 import requests
+
 ```
 Using the `GET` function we will request for the data from the API & will store it in a variable.
+
 ```py
 quotedata = requests.get("http://quotes.stormconsultancy.co.uk/random.json")
+
 ```
 JSON data obtained from the API has multiple data stored in a key-value pair.
+
+```
+print(quotedata)
+```
+
+Try pasting this code in your [repl.it](https://repl.it) project, and your console should have Programming quotes in it 😛
 Example:
+
 ```json
 {"author":"Mark Gibbs","id":36,"quote":"No matter how slick the demo is in rehearsal, when you do it in front of a live audience, the probability of a flawless presentation is inversely proportional to the number of people watching, raised to the power of the amount of money involved.","permalink":"http://quotes.stormconsultancy.co.uk/quotes/36"}
 ```
 We need to extract the specific data from the JSON data obtained & store it in a variable.
+
 ```py
 quote = quotedata.json()['quote']
 ```
+
 Pretty straight forward, right? 😄
 
 ## 🛠️ Putting it all together
@@ -83,6 +101,7 @@ hour = int(input("Enter hour in 24hrs Format without preciding zeroes:"))
 minutes = int(input("Enter minutes without preciding zeroes:"))
 kit.sendwhatmsg(phone, quote ,hour, minutes)
 ```
+
 The Data retrieved from the API, is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages. 
 Message can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end user to manually code & enter the input data required for sending messages, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use program. The necessary instructions for the user are given by printing the sentences using `print` function.
  

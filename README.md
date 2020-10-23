@@ -132,6 +132,12 @@ Now that you know how to build & automate sending WhatsApp messages 💬, try se
 
 ![Brainstorm Banner](https://cloud-pdzrxhu87.vercel.app/0brainstorm.gif)
 
+Here are some examples of projects that stem from this project but take it even further:
+
+Jokes: [Demo Code](https://repl.it/@injineer/WhatsAuto-Jokes)
+Trivia: [Demo Code](https://repl.it/@injineer/WhatsAuto-Trivia)
+Maths Fact: [Demo Code](https://repl.it/@injineer/WhatsAuto-Maths)
+
 Here are some you can get your hands dirty with 👇
 
 - [COVID API](https://covid19api.com/) (Share Daily COVID Case reports)

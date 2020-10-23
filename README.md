@@ -102,6 +102,8 @@ Pretty straight forward, right? 😄
 
 To make our program, all we need to do is get the data from the API using `requests.get` function then send a message 💬 using the `pywhatkit` module.
 
+![](img/banner3.png)
+
 ```py
 import requests
 import json

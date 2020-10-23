@@ -130,6 +130,8 @@ NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to
 
 Now that you know how to build & automate sending WhatsApp messages 💬, try sending messages 💬 to your friends and family, and also use different JSON APIs to send different information through Whatsapp. This Program can be developed in various ways & integrated with other services to make life easy. 
 
+![](img/brainstorm.gif)
+
 Here are some you can get your hands dirty with 👇
 
 - [COVID API](https://covid19api.com/) (Share Daily COVID Case reports)

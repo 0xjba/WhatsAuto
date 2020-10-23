@@ -6,7 +6,7 @@ author: '@the-injineer'
 How easy it would have been if sending important daily messages automatically and in a scheduled manner was possible. Let's make that MAGIC happen.
 WhatsAuto is a program that uses pywhatkit which is a Python library for automating WhatsApp to send messages 💬 like daily quotes, news, market news, etc. 
 
-![](img/banner.png)
+https://cloud-lgkvx9qpj.vercel.app/0banner.png
 
 In this workshop, you’re going to create a Python program to automate sending Whatsapp messages, in less than 10 lines of code.
 

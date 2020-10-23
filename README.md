@@ -138,4 +138,4 @@ Here are some you can get your hands dirty with 👇
 - [Stock Market API](https://finnhub.io/) (Up to date Stock & Crypto Market Data)
 - [Football API](https://www.api-football.com/) (Live Scores or Highlights of all Football Matches)
 
-Wanna Brainstorm more! Code for this program & different implementations is on my GitHub, feel free to fork, send amazing PRs to it ✨
+Wanna Brainstorm more! Code for this program & different implementations is on my [GitHub](https://github.com/the-injineer/WhatsAuto), feel free to fork, send amazing PRs to it ✨

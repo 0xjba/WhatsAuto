@@ -67,21 +67,23 @@ quotedata = requests.get("http://quotes.stormconsultancy.co.uk/random.json")
 ```
 JSON data obtained from the API has multiple data stored in a key-value pair.
 
+Try pasting the code below in your [repl.it](https://repl.it) project or IDE and your console should have Programming quotes in it 😛
+
 ```
 print(quotedata)
 ```
 
-Try pasting this code in your [repl.it](https://repl.it) project, and your console should have Programming quotes in it 😛
 Example:
 
 ```json
 {"author":"Mark Gibbs","id":36,"quote":"No matter how slick the demo is in rehearsal, when you do it in front of a live audience, the probability of a flawless presentation is inversely proportional to the number of people watching, raised to the power of the amount of money involved.","permalink":"http://quotes.stormconsultancy.co.uk/quotes/36"}
 ```
-We need to extract the specific data from the JSON data obtained & store it in a variable.
+Now we need to extract the specific data from the JSON data obtained & store it in a variable.
 
 ```py
 quote = quotedata.json()['quote']
 ```
+If you want to see the output of the specific data extracted the use the `print(quote)` command.
 
 Pretty straight forward, right? 😄
 

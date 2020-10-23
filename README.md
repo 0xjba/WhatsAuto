@@ -120,7 +120,7 @@ Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*
 
 ![](img/banner4.PNG)
 
-NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to send.
+NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to be sent.
 
 ## ⚡ What's next?
 

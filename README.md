@@ -3,7 +3,7 @@ name: 'WhatsAuto'
 description: 'Automate sending Whatsapp messages using Python'
 author: '@the-injineer'
 ---
-How easy it would have been if sending important daily messages automatically & in a scheduled manner was possible. Lets make that MAGIC happen.
+How easy it would have been if sending important daily messages automatically and in a scheduled manner was possible. Let's make that MAGIC happen.
 WhatsAuto is a program that uses pywhatkit which is a Python library for automating WhatsApp to send messages 💬 like daily quotes, news, market news, etc. 
 
 ![](img/banner.png)
@@ -14,7 +14,7 @@ In this workshop, you’re going to create a Python program to automate sending 
 
 You should have a beginner understanding of Python & JSON.
 
-If you dont have a idea about this, then dont worry this workshop will give you the bare essentials to get started.
+If you don't have an idea about this, then don't worry this workshop will give you the bare essentials to get started.
 
 ## 🚀 Getting started
 
@@ -30,9 +30,9 @@ pip install pywhatkit
 ## 💻 Setting up the Pywhatkit Module.
 
 Awesome! Now that we’ve installed pywhatkit, we’re ready to [import](https://docs.python.org/3/reference/import.html
-) the library to setup the environment, but before that lets create a Directory for the project; Example: WhatsAuto.
+) the library to set up the environment, but before that let's create a Directory for the project; Example: WhatsAuto.
 
-Inside the Project directory create the file for python program, then `import` the module.
+Inside the Project directory create the file for the python program, then `import` the module.
 
 ```py
 import pywhatkit
@@ -40,7 +40,7 @@ import pywhatkit
 
 Great! Now that we’ve imported pywhatkit, we are all good with the automation part.
 
-Just put the recievers phone number followed by the message 💬 & finally the time to send the message 💬.
+Just put the receiver's phone number followed by the message 💬 & finally the time to send the message 💬.
 
 ```py
 pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)
@@ -50,7 +50,7 @@ NOTE: pywhatkit doesnt accept Time with preciding zeroes.
 
 ## 🌐 Fetching Data
 
-Large amount of data of many services like Weather, Traffic & a lot more can be accessed with their API's. We will be using here API's( application programming interface) which throws out data in [JSON](https://www.json.org/json-en.html) form. But before that what exactly is a API, it is a set of functions that allows applications to access data and interact with external software components, operating systems, or microservices.
+A Large amount of data of many services like Weather, Traffic & a lot more can be accessed with their APIs. We will be using here APIs( application programming interface) which throws out data in [JSON](https://www.json.org/json-en.html) form. But before that what exactly is a API, it is a set of functions that allows applications to access data and interact with external software components, operating systems, or microservices.
 
 To obtain data from an API we need to import the JSON & [requests](https://requests.readthedocs.io/en/master/api/) module.
 
@@ -87,7 +87,7 @@ Pretty straight forward, right? 😄
 
 ## 🛠️ Putting it all together
 
-To make our program, all we need to do is get the data from the API using `requests.get` function then send message 💬 using the `pyhwatkit` module.
+To make our program, all we need to do is get the data from the API using `requests.get` function then send a message 💬 using the `pywhatkit` module.
 
 ```py
 import requests
@@ -102,8 +102,8 @@ minutes = int(input("Enter minutes without preciding zeroes:"))
 kit.sendwhatmsg(phone, quote ,hour, minutes)
 ```
 
-The Data retrieved from the API, is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages 💬. 
-Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end user to manually code & enter the input data required for sending messages 💬, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use program. The necessary instructions for the user are given by printing the sentences using `print` function.
+The Data retrieved from the API is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages 💬. 
+Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end-user to manually code & enter the input data required for sending messages 💬, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use the program. The necessary instructions for the user are given by printing the sentences using `print` function.
  
 ## ⚡ What's next?
 

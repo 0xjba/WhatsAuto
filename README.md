@@ -118,7 +118,7 @@ kit.sendwhatmsg(phone, quote ,hour, minutes)
 The Data retrieved from the API is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages 💬. 
 Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end-user to manually code & enter the input data required for sending messages 💬, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use the program. The necessary instructions for the user are given by printing the sentences using `print` function.
 
-![](img/banner4.png)
+![](img/banner4.PNG)
 
 NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to send.
 

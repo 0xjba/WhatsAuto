@@ -117,7 +117,11 @@ kit.sendwhatmsg(phone, quote ,hour, minutes)
 
 The Data retrieved from the API is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages 💬. 
 Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end-user to manually code & enter the input data required for sending messages 💬, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use the program. The necessary instructions for the user are given by printing the sentences using `print` function.
- 
+
+![](img/banner4.png)
+
+NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to send.
+
 ## ⚡ What's next?
 
 Now that you know how to build & automate sending WhatsApp messages 💬, try sending messages 💬 to your friends and family, and also use different JSON APIs to send different information through Whatsapp. This Program can be developed in various ways & integrated with other services to make life easy. 

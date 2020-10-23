@@ -102,8 +102,6 @@ Pretty straight forward, right? 😄
 
 To make our program, all we need to do is get the data from the API using `requests.get` function then send a message 💬 using the `pywhatkit` module.
 
-![](img/banner3.PNG)
-
 ```py
 import requests
 import json
@@ -120,7 +118,7 @@ kit.sendwhatmsg(phone, quote ,hour, minutes)
 The Data retrieved from the API is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages 💬. 
 Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end-user to manually code & enter the input data required for sending messages 💬, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use the program. The necessary instructions for the user are given by printing the sentences using `print` function.
 
-![](img/banner3.png)
+![](img/banner3.PNG)
 
 Try this code on [Repl.it](https://repl.it) or any IDE. Once the inputs are given the program will automatically open up the Whatsapp web page, if not logged in make sure to log in using the QR code for seamless working of the program.
 

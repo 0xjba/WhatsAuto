@@ -26,6 +26,7 @@ What is pip?-[pip](https://docs.python.org/3/installing/index.html) is a de fact
 ```py
 pip install pywhatkit
 ```
+NOTE: This step needs to be done only once.
 
 ## 💻 Setting up the Pywhatkit Module.
 

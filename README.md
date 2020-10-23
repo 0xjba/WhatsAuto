@@ -51,7 +51,7 @@ NOTE: pywhatkit doesnt accept Time with preciding zeroes.
 
 ## 🌐 Fetching Data
 
-![](img/banner1.png)
+![Data_Banner](https://cloud-4ta4p4q1u.vercel.app/0banner1.png)
 
 A Large amount of data of many services like Weather, Traffic & a lot more can be accessed with their APIs. We will be using here APIs( application programming interface) which throws out data in [JSON](https://www.json.org/json-en.html) form. But before that what exactly is a API, it is a set of functions that allows applications to access data and interact with external software components, operating systems, or microservices.
 
@@ -118,11 +118,11 @@ kit.sendwhatmsg(phone, quote ,hour, minutes)
 The Data retrieved from the API is stored in Variables & then the `pywhatkit` module utilizes this data to send the messages 💬. 
 Message 💬 can be sent through `pywhatkit` using `pywhatkit.sendwhatmsg("+919*********","Hello World",15,00)` command. But the module requires the end-user to manually code & enter the input data required for sending messages 💬, To avoid this we can store the data in a variable (phone, hour, & time) & ask from the end user making it easy to use the program. The necessary instructions for the user are given by printing the sentences using `print` function.
 
-![](img/banner3.PNG)
+![Repl.it_Banner](https://cloud-pq473cilo.vercel.app/0banner3.png)
 
 Try this code on [Repl.it](https://repl.it) or any IDE. Once the inputs are given the program will automatically open up the Whatsapp web page, if not logged in make sure to log in using the QR code for seamless working of the program.
 
-![](img/banner4.PNG)
+![Whatsapp_Banner](https://cloud-kqbphlx7s.vercel.app/0banner4.png)
 
 NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to be sent.
 
@@ -130,7 +130,7 @@ NOTE: Message after entered in the chatbox of Whatsapp, takes 20 seconds more to
 
 Now that you know how to build & automate sending WhatsApp messages 💬, try sending messages 💬 to your friends and family, and also use different JSON APIs to send different information through Whatsapp. This Program can be developed in various ways & integrated with other services to make life easy. 
 
-![](img/brainstorm.gif)
+![Brainstorm Banner](https://cloud-pdzrxhu87.vercel.app/0brainstorm.gif)
 
 Here are some you can get your hands dirty with 👇
 

@@ -67,17 +67,25 @@ quotedata = requests.get("http://quotes.stormconsultancy.co.uk/random.json")
 ```
 JSON data obtained from the API has multiple data stored in a key-value pair.
 
-Try pasting the code below in your [repl.it](https://repl.it) project or IDE and your console should have Programming quotes in it 😛
+Try pasting the code below in your [repl.it](https://repl.it) project or IDE and your console should show some weird numbers 😛.
+Those are HTTP status codes for request made to the API. HTTP status codes in the 2xx range are successful request returns. Failed requests return status codes in the 4xx and 5xx ranges. Know more about different Error status codes - [Link](https://cloud.google.com/storage/docs/json_api/v1/status-codes#errorformat)
 
 ```
 print(quotedata)
 ```
 
-Example:
+JSON Data Example:
 
 ```json
 {"author":"Mark Gibbs","id":36,"quote":"No matter how slick the demo is in rehearsal, when you do it in front of a live audience, the probability of a flawless presentation is inversely proportional to the number of people watching, raised to the power of the amount of money involved.","permalink":"http://quotes.stormconsultancy.co.uk/quotes/36"}
 ```
+*You can view the Entire JSON data by running the code below which stores JSON data as a whole & prints that variable.
+
+```JSON
+quote = quotedata.json()
+print(quote)
+```
+
 Now we need to extract the specific data from the JSON data obtained & store it in a variable.
 
 ```py

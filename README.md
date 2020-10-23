@@ -50,6 +50,8 @@ NOTE: pywhatkit doesnt accept Time with preciding zeroes.
 
 ## 🌐 Fetching Data
 
+![](img/banner1.png)
+
 A Large amount of data of many services like Weather, Traffic & a lot more can be accessed with their APIs. We will be using here APIs( application programming interface) which throws out data in [JSON](https://www.json.org/json-en.html) form. But before that what exactly is a API, it is a set of functions that allows applications to access data and interact with external software components, operating systems, or microservices.
 
 To obtain data from an API we need to import the JSON & [requests](https://requests.readthedocs.io/en/master/api/) module.
